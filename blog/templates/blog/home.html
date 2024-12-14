@@ -1,0 +1,20 @@
+<!-- blog/templates/blog/home.html -->
+
+{% extends "base.html" %}
+
+{% block page_content %}
+    {% block posts %}
+    <div id="post-list">
+        {% for post in posts %}
+        <div id="post">
+            <h3 id="home-post-title"><a href="{% url 'blog_detail' post.pk %}">{{ post.title }}</a></h3>
+            <small>
+                {{ post.created }}
+            </small>
+            <p id="post-text">{{ post.text | slice:":300" }}...</p>
+        </div>
+        {% endfor %}
+        <br>
+    </div>
+    {% endblock posts %}
+{% endblock page_content %}

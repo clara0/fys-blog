@@ -1,0 +1,125 @@
+
+body {
+    background-color: #f2c899;
+    margin: 0; 
+}
+
+header {
+    padding-top: 1px;
+    background-color: #ffecc9;
+    margin-bottom: 35px;
+}
+
+#title {
+    font-family: "Abril Fatface", serif;
+    font-size: 60px;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+nav {
+    background-color: #b3770b;
+    font-family: "Onest", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffecc9;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover { 
+    color: #f2c899; 
+}
+
+#post-list {
+    max-width: 700px;
+    margin: auto;
+}
+
+#post {
+    background-color: #ffecc9;
+    margin: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-left: 20px;
+}
+
+#detail {
+    background-color: #ffecc9;
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    padding-top: 10px;
+}
+
+#home-post-title {
+    font-family: "PT Serif", serif;
+    font-size: 20px;
+}
+
+#post-title {
+    font-family: "PT Serif", serif;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+#post-text, small {
+    font-family: "Onest", sans-serif;
+}
+
+small {
+    font-size: 18px;
+}
+
+#post-text-detail {
+    margin: 15px;
+    font-family: "Onest", sans-serif;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+hr {
+    color: black;
+    margin: 40px;
+    border-style: solid;
+}
+
+#comment-form {
+    font-family: "Onest", sans-serif;
+    font-weight: 500px;
+}
+
+#comments {
+    margin-top: 30px;
+    padding: 60px;
+    padding-top: 20px;
+    background-color: #ffecc9;
+    font-family: "Onest", sans-serif;
+    font-size: 20px;
+}
+
+#comment {
+    padding-left: 10px;
+    font-size: 16px;
+    padding-right: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #f2c899;
+}

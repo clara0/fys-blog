@@ -1,0 +1,27 @@
+<!-- blog/templates/blog/base.html -->
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>FYS Blog</title>
+        <link rel="stylesheet" href="{% static 'style.css' %}"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Onest:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        </head>
+
+    <body>
+        <header>
+            <h1 id="title">Books and the Internet</h1>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'blog_home' %}">HOME</a></li>
+                </ul>
+            </nav>
+        </header>
+        {% block page_content %}{% endblock page_content %}
+    </body>
+</html>

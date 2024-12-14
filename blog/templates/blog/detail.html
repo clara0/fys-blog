@@ -1,0 +1,38 @@
+<!--  blog/templates/blog/detail.html -->
+
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+<div id="detail">
+    <h2 id="post-title">{{ post.title }}</h2>
+    <small>{{ post.created }}</small><br><br>
+    
+    <div id="post-text-detail">{{ post.text | linebreaks }}</div>
+
+    {% if post.img %}
+        <img src="{% static "images/forward.png" %}"/>
+    {% endif %}
+
+    <hr>
+
+    <h3 id="comment-form">Leave a comment:</h3>
+    <form method="post">
+        {% csrf_token %}
+        <div>{{ form.author }}</div>
+        <div>{{ form.body }}</div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<div id="comments">
+    <h3>Comments:</h3>
+    {% for comment in comments %}
+    <div id="comment">
+        <p>
+            <b>{{ comment.author }}</b> | {{ comment.created }}
+        </p>
+        {{ comment.text | linebreaks }}
+    </div>
+    <br>
+    {% endfor %}
+</div>
+{% endblock page_content %}
