@@ -6,11 +6,11 @@
 <div id="detail">
     <h2 id="post-title">{{ post.title }}</h2>
     <small>{{ post.created }}</small><br><br>
-    
+
     <div id="post-text-detail">{{ post.text | linebreaks }}</div>
 
     {% if post.img %}
-        <img src="{% static "images/forward.png" %}"/>
+        <!--<img src="{% static "images/goodreads.png" %}"/>-->
     {% endif %}
 
     <hr>

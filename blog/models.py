@@ -5,7 +5,7 @@ from django.db import models
 class Post(models.Model):
     title = models.CharField(max_length=300)
     text = models.TextField()
-    img = models.ImageField(upload_to='blog/static/images/', blank=True)
+    img = models.ImageField(upload_to='images/', blank=True)
     created = models.DateField(auto_now_add=True)
 
     def __str__(self):
