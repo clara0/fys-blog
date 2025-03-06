@@ -10,7 +10,7 @@ header {
     margin-bottom: 35px;
 }
 
-#title {
+.title {
     font-family: "Abril Fatface", serif;
     font-size: 60px;
     font-weight: 400;
