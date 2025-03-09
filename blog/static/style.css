@@ -48,12 +48,12 @@ a:hover {
     color: #f2c899; 
 }
 
-#post-list {
+.post-list {
     max-width: 700px;
     margin: auto;
 }
 
-#post {
+.post {
     background-color: #ffecc9;
     margin: 20px;
     padding: 10px;
@@ -61,7 +61,7 @@ a:hover {
     padding-left: 20px;
 }
 
-#detail {
+.detail {
     background-color: #ffecc9;
     max-width: 800px;
     margin: auto;
@@ -69,18 +69,18 @@ a:hover {
     padding-top: 10px;
 }
 
-#home-post-title {
+.home-post-title {
     font-family: "PT Serif", serif;
     font-size: 20px;
 }
 
-#post-title {
+.post-title {
     font-family: "PT Serif", serif;
     font-size: 35px;
     margin-bottom: 15px;
 }
 
-#post-text, small {
+.post-text, small {
     font-family: "Onest", sans-serif;
 }
 
@@ -88,7 +88,7 @@ small {
     font-size: 18px;
 }
 
-#post-text-detail {
+.post-text-detail {
     margin: 15px;
     font-family: "Onest", sans-serif;
     line-height: 1.8;
@@ -101,12 +101,12 @@ hr {
     border-style: solid;
 }
 
-#comment-form {
+.comment-form {
     font-family: "Onest", sans-serif;
     font-weight: 500px;
 }
 
-#comments {
+.comments {
     margin-top: 30px;
     padding: 60px;
     padding-top: 20px;
@@ -115,7 +115,7 @@ hr {
     font-size: 20px;
 }
 
-#comment {
+.comment {
     padding-left: 10px;
     font-size: 16px;
     padding-right: 10px;
